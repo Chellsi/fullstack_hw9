@@ -1,0 +1,248 @@
+
+:root {
+    --color-primary: #34547a;
+    --color-secondary: #727272;
+    --color-black: #000000;
+    --color-gray-light: #edeef0;
+    --color-white: #ffffff;
+    --color-gray-lighter: #F9F9F9;
+
+    --font-size: 16px;
+    --font-family: "Roboto", sans-serif;
+
+    --letter-spacing: 0.1em;
+
+    --line-height: 1.64;
+    --line-height-sm: 1.4;
+
+    --container-primary: 1110px;
+    --container-secondary: 540px;
+
+    --gap: 20px;
+    --gap-sm: calc(var(--gap) * 0.5);
+    --gap-lg: calc(var(--gap) * 1.5);
+    --gap-xl: calc(var(--gap) * 2);
+    --gap-xxl: calc(var(--gap) * 3);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: var(--line-height-sm);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: var(--line-height-sm);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+span {
+    margin-top: 0;
+    padding: 0;
+    font-size: var(--font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Common block */
+.container {
+    width: min(100% - var(--gap-xl), var(--container-primary));
+    margin-inline: auto;
+}
+
+.container-sm {
+    width: min(100% - var(--gap-xl), var(--container-secondary));
+    margin-inline: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.section {
+    padding-top: 110px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.section__title {
+    margin-bottom: 35px;
+}
+
+.section__description {
+    color: var(--color-secondary);
+}
+
+/* Header and navbar */
+.header {
+    background-color: var(--color-gray-light);
+    padding-top: 79px;
+    padding-bottom: 141px;
+}
+
+.navbar {
+    padding-bottom: 162px;
+}
+
+.navbar__list {
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: var(--letter-spacing);
+    column-gap: 27px;
+    margin-left: -0.75em;
+}
+
+.navbar__link {
+    display: block;
+    font-size: var(--font-size);
+    color: var(--color-black);
+    text-transform: uppercase;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+}
+
+.navbar__link--active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Hero block */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: var(--container-secondary);
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.hero__description {
+    color: var(--color-secondary);
+    margin-bottom: 65px;
+}
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    min-width: 225px;
+    min-height: 65px;
+    text-transform: uppercase;
+    padding: 0.5em;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+}
+
+
+/* About me block */
+.about {
+    background-color: var(--color-white);
+}
+
+
+/* Projects block */
+.projects__container {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 100px;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap-xxl);
+}
+
+.projects__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__item__text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item__icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Video block */
+.video__player {
+    margin-top: 57px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    min-height: 200px;
+}
+
+/* Footer block */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 50px;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+}
+
+.footer__title {
+    font-size: 21px;
+}
+
+.footer_copyright {
+    font-size: 13px;
+}
