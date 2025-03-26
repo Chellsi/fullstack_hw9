@@ -84,20 +84,6 @@ a {
     margin-inline: auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    margin: -1px;
-    clip-path: inset(100%);
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    overflow: hidden;
-    visibility: hidden;
-}
-
 .section {
     padding-top: 110px;
     padding-bottom: 90px;
@@ -180,7 +166,7 @@ a {
 
 /* About me block */
 .about {
-    background-color: var(--color-white);
+    background-color: var(--color-gray-lighter);
 }
 
 
@@ -216,7 +202,11 @@ a {
     height: 50px;
 }
 
-/* Video block */
+/* Process block */
+.process {
+    background-color: var(--color-gray-lighter);
+}
+
 .video__player {
     margin-top: 57px;
     width: 100%;
