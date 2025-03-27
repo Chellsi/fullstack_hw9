@@ -133,6 +133,7 @@ a {
     font-weight: 700;
 }
 
+
 /* Hero block */
 .hero {
     display: flex;
@@ -197,7 +198,7 @@ a {
     justify-content: center;
 }
 
-.projects__item__text {
+.projects__item-text {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -205,20 +206,20 @@ a {
     gap: 5px;
 }
 
-.projects__item__title {
+.projects__item-title {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.projects__item__description {
+.projects__item-description {
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 0;
     line-height: 1;
 }
 
-.item__icon {
+.projects__item-icon {
     width: 50px;
     height: 50px;
 }
@@ -227,6 +228,18 @@ a {
 .process {
     background-color: var(--color-gray-lighter);
     padding-top: 89px;
+    padding-bottom: 0;
+}
+
+
+/* Video block */
+.video {
+    background-color: var(--color-gray-lighter);
+    padding-top: 0;
+}
+
+.video__title {
+    display: none;
 }
 
 .video__player {
