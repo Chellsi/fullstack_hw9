@@ -57,8 +57,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 0;
     margin-bottom: 0;
     padding: 0;
 }
@@ -85,12 +86,13 @@ a {
 }
 
 .section {
-    padding-top: 110px;
-    padding-bottom: 90px;
+    padding-top: 100px;
+    padding-bottom: 92px;
     text-align: center;
 }
 
 .section__title {
+    margin-top: 8px;
     margin-bottom: 35px;
 }
 
@@ -106,7 +108,7 @@ a {
 }
 
 .navbar {
-    padding-bottom: 162px;
+    padding-bottom: 142px;
 }
 
 .navbar__list {
@@ -114,7 +116,7 @@ a {
     flex-wrap: wrap;
     letter-spacing: var(--letter-spacing);
     column-gap: 27px;
-    margin-left: -0.75em;
+    margin-left: -1.1em;
 }
 
 .navbar__link {
@@ -141,12 +143,14 @@ a {
 
 .hero__title {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 39px;
+    margin-left: -0.1em;
 }
 
 .hero__description {
     color: var(--color-secondary);
-    margin-bottom: 65px;
+    margin-bottom: 57px;
+    margin-left: -0.3em;
 }
 
 .hero__button {
@@ -161,6 +165,7 @@ a {
     padding: 0.5em;
     letter-spacing: var(--letter-spacing);
     cursor: pointer;
+    margin-left: -0.3em;
 }
 
 
@@ -174,14 +179,16 @@ a {
 .projects__container {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin-left: -2.5em;
 }
 
 .projects__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--gap-xxl);
+    gap: calc(var(--gap-xxl) + 0.2em);
 }
 
 .projects__item {
@@ -205,12 +212,13 @@ a {
 /* Process block */
 .process {
     background-color: var(--color-gray-lighter);
+    padding-top: 89px;
 }
 
 .video__player {
-    margin-top: 57px;
+    margin-top: 48px;
     width: 100%;
-    height: auto;
+    height: 600px;
     aspect-ratio: 16 / 9;
     border: 0;
     min-height: 200px;
@@ -220,13 +228,13 @@ a {
 .footer {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 50px;
+    padding: 45px;
 }
 
 .footer__text {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-sm);
+    gap: calc(var(--gap-sm) - 4px);
 }
 
 .footer__title {
@@ -235,6 +243,7 @@ a {
 
 .footer__copyright {
     font-size: 13px;
+    font-weight: 300;
 }
 
 /* Media Queries */
